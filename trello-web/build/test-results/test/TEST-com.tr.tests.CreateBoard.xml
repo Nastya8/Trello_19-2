@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tr.tests.CreateBoard" tests="2" skipped="2" failures="0" errors="0" timestamp="2019-05-20T12:08:04" hostname="MONTY" time="0.0">
+  <properties/>
+  <testcase name="boardCcountTest" classname="com.tr.tests.CreateBoard" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="boardCreationTest" classname="com.tr.tests.CreateBoard" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

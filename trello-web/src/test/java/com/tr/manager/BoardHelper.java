@@ -1,5 +1,6 @@
 package com.tr.manager;
 
+import com.tr.model.Board;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,14 +33,23 @@ public class BoardHelper extends  HelperBase {
   }
 
   public void submitBoardCreation() {
+    if(isElementPresent(By.cssSelector("[type=submit]"))){
+      click(By.cssSelector("[type=submit]"));
+    }else
     click(By.cssSelector("[data-test-id='header-create-board-submit-button']"));
   }
 
-  public void fillBoardCreationForm(String boardName) {
-    type(By.cssSelector("[data-test-id='header-create-board-title-input']"), boardName);
+  public void fillBoardCreationForm(Board board) {
+    if(isElementPresent(By.cssSelector(".create-board-tile input"))){
+      type(By.cssSelector(".create-board-tile input"), board.getBoardName());
+    }else
+    type(By.cssSelector("[data-test-id='header-create-board-title-input']"), board.getBoardName());
   }
 
   public void selectCreateBoardFromDropDown() {
+    if (isElementPresent(By.cssSelector(".js-new-board"))){
+      click(By.cssSelector(".js-new-board"));
+    }else
     click(By.cssSelector("[data-test-id='header-create-board-button']"));
   }
 
@@ -58,15 +68,29 @@ public class BoardHelper extends  HelperBase {
 
   public void openMenu() {
 
+  click(By.cssSelector("[class='board-header-btn mod-show-menu js-show-sidebar']"));
   }
 
   public void clickOnMoreButton() {
-    click(By.cssSelector(".js-open-more"));
+    click(By.cssSelector("[class='board-menu-navigation-item-link js-open-more']"));
+    //click(By.cssSelector(".js-open-more"));
   }
 
   public void clickCloseButton() {
-    if (wd.findElements(By.cssSelector(".js-close-board")).size() > 0) {
-      click(By.cssSelector(".js-close-board"));
+    if (isElementPresent(By.cssSelector("[class='board-menu-navigation-item-link js-close-board']"))) {
+      click(By.cssSelector("[class='board-menu-navigation-item-link js-close-board']"));
     } else click(By.cssSelector(".js-leave-board"));
+  }
+
+  public void confirmCloseButton() {
+    click(By.cssSelector("[class='js-confirm full negate']"));
+  }
+
+  public void clickPermanentlyDelete() {
+    click(By.cssSelector("[class='quiet js-delete']"));
+  }
+
+  public void confirmPermanentlyDelete() {
+    click(By.cssSelector("[class='js-confirm full negate']"));
   }
 }

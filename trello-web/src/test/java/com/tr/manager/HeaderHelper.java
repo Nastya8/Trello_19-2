@@ -10,19 +10,26 @@ public class HeaderHelper  extends HelperBase{
 
   public void clickOnPlusButtonOnHeader() throws InterruptedException {
     Thread.sleep(15000);
-    click(By.name("add"));
+    //click(By.name("add"));
+      click(By.cssSelector("[class='header-btn-icon icon-lg icon-add light']"));
       }
 
-      public void waitAndClickOnPlusButtonOnHeader() throws InterruptedException {
-   waitForElementAndClick(15, By.name("add"));
+      public void waitAndClickOnPlusButtonOnHeader() {
+  // waitForElementAndClick(15, By.name("add"));
+   waitForElementAndClick(15, By.cssSelector("[class='header-btn-icon icon-lg icon-add light']"));
   //  click(By.name("add"));
       }
 
       public  void clickOnHomeButtonOnHeader() throws InterruptedException {
     //click(By.cssSelector(".icon-house"));
         Thread.sleep(7000);
-        click(By.name("house"));
+        if(isElementPresent(By.cssSelector(".icon-house"))){
+            click(By.cssSelector(".icon-house"));
+          }else click(By.name("house"));
 
       }
+
+
+
 
 }
