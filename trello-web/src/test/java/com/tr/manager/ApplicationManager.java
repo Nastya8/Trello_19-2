@@ -25,11 +25,12 @@ public class ApplicationManager {
     if(browser.equals(BrowserType.CHROME)){
       wd = new ChromeDriver();
     }else if(browser.equals(BrowserType.FIREFOX)){
-      wd = new FirefoxDriver();
-    }else if(browser.equals(BrowserType.EDGE)){
-      wd = new EdgeDriver();
+     wd = new FirefoxDriver();
+   //}else
+    //  if(browser.equals(BrowserType.EDGE)){
+     // wd = new EdgeDriver();
     }
-    //wd = new FirefoxDriver();
+    wd = new ChromeDriver();
     wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS );
     wd.manage().window().maximize();
 

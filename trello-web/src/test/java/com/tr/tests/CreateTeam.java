@@ -16,7 +16,7 @@ public class CreateTeam extends  TestBase {
   public  void teamCreationFromHeaderTest() throws InterruptedException {
     app.getHeader().clickOnPlusButtonOnHeader();
     app.getTeamHelper().selectCreateTeamFromDropDown();
-    String teamName = "bbby" + System.currentTimeMillis();
+    String teamName = "bbbby" + System.currentTimeMillis();
     //final Team desc = new Team(teamName, "desc");
     app.getTeamHelper().fillTeamCreationForm(new Team().withTeamName(teamName).withDesc("desc"));
     app.getTeamHelper().submitTeamCreation();
