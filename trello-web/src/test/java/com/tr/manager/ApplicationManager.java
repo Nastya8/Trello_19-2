@@ -13,6 +13,7 @@ public class ApplicationManager {
   TeamHelper teamHelper;
   BoardHelper boardHelper;
   HeaderHelper header;
+  UserHelper user;
   WebDriver wd;
   private String browser;
 
@@ -35,11 +36,14 @@ public class ApplicationManager {
     wd.manage().window().maximize();
 
     openSite("https://trello.com/");
+    user = new UserHelper(wd);
     login("korsarushka@yandex.ru", "vasabi2018");
     boardHelper = new BoardHelper(wd);
     teamHelper = new TeamHelper(wd);
     header = new HeaderHelper(wd);
   }
+
+
 
   public void openSite(String url) {
     wd.get(url);
@@ -77,5 +81,8 @@ public class ApplicationManager {
 
   public HeaderHelper getHeader() {
     return header;
+  }
+  public UserHelper getUser() {
+    return user;
   }
 }
