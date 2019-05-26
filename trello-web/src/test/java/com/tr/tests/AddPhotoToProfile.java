@@ -20,11 +20,11 @@ public class AddPhotoToProfile extends TestBase{
         app.getUser().clickProfileFromDropDown();
         //clickChangePhoto
         app.getUser().clickChangePhoto();
-       File file = new File("src/test/resources/cat_small1.png");
+       File file = new File("src/test/resources/player-male.png");
         app.getUser().attachPicture(file);
 
        Thread.sleep(10000);
         //uploadPicture
-        
+
     }
 }

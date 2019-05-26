@@ -20,14 +20,24 @@ public class UserHelper extends HelperBase {
         click(By.cssSelector("a.js-profile"));
     }
 
+    public boolean isThereAnAvatar(){
+        return isElementPresent(By.cssSelector(".profile-image-image"));
+    }
+
     public void clickChangePhoto() {
-        WebElement profileAvatar = wd.findElement(By.cssSelector(".profile-image-initials"));
+        if (isThereAnAvatar()){
+            //remove avatar s-no-avatar
+        }
+
+        waitForElement(10,By.cssSelector(".profile-image-image"));
+        WebElement profileAvatar = wd.findElement(By.cssSelector(".profile-image-image"));
         WebElement changePic = wd.findElement(By.cssSelector(".profile-image-change-text"));
         new Actions(wd).moveToElement(profileAvatar).pause(5).click(changePic).perform();
 
     }
 
     public void attachPicture(File file) {
+        waitForElement(10,By.cssSelector(".js-upload-avatar"));
         attach(By.cssSelector(".js-upload-avatar"),file);
     }
 }
