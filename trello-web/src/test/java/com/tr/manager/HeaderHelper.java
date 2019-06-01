@@ -15,8 +15,8 @@ public class HeaderHelper  extends HelperBase{
       }
 
       public void waitAndClickOnPlusButtonOnHeader() {
-  // waitForElementAndClick(15, By.name("add"));
-   waitForElementAndClick(15, By.cssSelector("[class='header-btn-icon icon-lg icon-add light']"));
+   waitForElementAndClick(15, By.name("add"));
+   //waitForElementAndClick(15, By.cssSelector("[class='header-btn-icon icon-lg icon-add light']"));
   //  click(By.name("add"));
       }
 

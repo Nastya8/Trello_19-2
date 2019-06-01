@@ -1,5 +1,6 @@
 package com.tr.tests;
 
+import com.tr.model.UserProfile;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -19,9 +20,10 @@ public class AddPhotoToProfile extends TestBase{
         //click profile
         app.getUser().clickProfileFromDropDown();
         //clickChangePhoto
-        app.getUser().clickChangePhoto();
+        app.getUser().initChangePhoto();
        File file = new File("src/test/resources/player-male.png");
-        app.getUser().attachPicture(file);
+        app.getUser().attachPicture(new UserProfile().setPhoto(file));
+       // app.getUser().attachPicture(new File("src/test/resources/player-male.png"));
 
        Thread.sleep(10000);
         //uploadPicture
