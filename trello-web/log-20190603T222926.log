@@ -1,0 +1,8 @@
+22:29:37.730 [main] INFO  com.tr.tests.TestBase - Stop test testProfileModificationDataProviderwith parameters[bob512115, baby1111b2, ii]
+22:29:55.940 [main] INFO  com.tr.tests.TestBase - Start test testProfileModificationDataProvider
+22:29:55.943 [main] INFO  com.tr.tests.TestBase - Stop test testProfileModificationDataProviderwith parameters[ken252116, kinderb11123, io]
+22:29:56.712 [main] INFO  com.tr.tests.TestBase - Start test testProfileModificationDataProvider
+22:29:56.713 [main] INFO  com.tr.tests.TestBase - Stop test testProfileModificationDataProviderwith parameters[john351127, small3111b4, ij]
+22:29:57.060 [main] INFO  com.tr.tests.TestBase - Start test testProfileModificationDataProvider
+22:29:57.062 [main] INFO  com.tr.tests.TestBase - Stop test testProfileModificationDataProviderwith parameters[sam455112, gang46111b, im]
+22:30:10.808 [main] INFO  com.tr.tests.TestBase - Start test testProfileModificationDataProvider

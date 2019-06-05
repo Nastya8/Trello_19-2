@@ -13,12 +13,20 @@ public class UserHelper extends HelperBase {
         super(wd);
     }
 
-    public void clickOnAvatar() {
+    public void clickOnAvatar() throws InterruptedException {
+        Thread.sleep(10000);
+        if (isElementPresent(By.cssSelector("[data-test-id='header-member-menu-button']"))){
         click(By.cssSelector("[data-test-id='header-member-menu-button']"));
+        }else
+            click(By.cssSelector("#header img"));
+        //waitForElementAndClick(15, By.cssSelector("[data-test-id='header-member-menu-button']"));
     }
 
     public void clickProfileFromDropDown() {
+        if (isElementPresent(By.cssSelector("[data-test-id='header-member-menu-profile']"))){
         click(By.cssSelector("[data-test-id='header-member-menu-profile']"));
+        }else
+            click(By.cssSelector("a.js-profile"));
     }
 
     public boolean isThereAnAvatar(){
@@ -66,7 +74,7 @@ public class UserHelper extends HelperBase {
     }
 
     public void initProfileModification() {
-        waitForElementAndClick(10,By.cssSelector(".js-edit-profile"));
+        waitForElementAndClick(8,By.cssSelector(".js-edit-profile"));
     }
 
     public void fillProfileForm(UserProfile userProfile) {

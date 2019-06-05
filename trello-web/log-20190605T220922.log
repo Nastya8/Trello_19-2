@@ -1,0 +1,18 @@
+22:09:34.341 [main] INFO  com.tr.tests.TestBase - Stop test teamCreationFromHeaderTestwith parameters[]
+22:09:58.679 [main] INFO  com.tr.tests.TestBase - Start test teamCreationFromHeaderTest
+22:09:58.682 [main] INFO  com.tr.tests.TestBase - Stop test boardCcountTestwith parameters[]
+22:09:58.754 [main] INFO  com.tr.tests.TestBase - Start test boardCcountTest
+22:09:58.763 [main] INFO  com.tr.tests.TestBase - Stop test boardCreationTestwith parameters[com.tr.model.Board@65b104b9]
+22:10:26.998 [main] INFO  com.tr.tests.TestBase - Start test boardCreationTest
+22:10:26.999 [main] INFO  com.tr.tests.TestBase - Stop test boardCreationTestwith parameters[com.tr.model.Board@1941a8ff]
+22:10:55.169 [main] INFO  com.tr.tests.TestBase - Start test boardCreationTest
+22:10:55.170 [main] INFO  com.tr.tests.TestBase - Stop test boardCreationTestwith parameters[com.tr.model.Board@4983159f]
+22:11:23.323 [main] INFO  com.tr.tests.TestBase - Start test boardCreationTest
+22:11:23.323 [main] INFO  com.tr.tests.TestBase - Stop test boardCreationTestwith parameters[com.tr.model.Board@3382f8ae]
+22:11:51.644 [main] INFO  com.tr.tests.TestBase - Start test boardCreationTest
+22:11:51.645 [main] INFO  com.tr.tests.TestBase - Stop test boardCreationTestwith parameters[com.tr.model.Board@5536379e]
+22:12:19.931 [main] INFO  com.tr.tests.TestBase - Start test boardCreationTest
+22:12:19.932 [main] INFO  com.tr.tests.TestBase - Stop test boardCreationTestwith parameters[com.tr.model.Board@493dfb8e]
+22:12:48.216 [main] INFO  com.tr.tests.TestBase - Start test boardCreationTest
+22:12:48.217 [main] INFO  com.tr.tests.TestBase - Stop test boardCreationTestwith parameters[com.tr.model.Board@7e0aadd0]
+22:13:16.578 [main] INFO  com.tr.tests.TestBase - Start test boardCreationTest
