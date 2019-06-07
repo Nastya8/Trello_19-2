@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tr.tests.CreateBoard" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-05-20T14:06:51" hostname="MONTY" time="8.636">
+<testsuite name="com.tr.tests.CreateBoard" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-06-07T06:11:40" hostname="MONTY" time="85.87">
   <properties/>
-  <testcase name="boardCcountTest" classname="com.tr.tests.CreateBoard" time="0.465"/>
-  <testcase name="boardCreationTest" classname="com.tr.tests.CreateBoard" time="8.157"/>
-  <system-out><![CDATA[11
-12    -   11
+  <testcase name="boardCreationTest[0](com.tr.model.Board@46ed07bc)" classname="com.tr.tests.CreateBoard" time="29.076"/>
+  <testcase name="boardCreationTest[1](com.tr.model.Board@5239ad49)" classname="com.tr.tests.CreateBoard" time="28.386"/>
+  <testcase name="boardCreationTest[2](com.tr.model.Board@22009d44)" classname="com.tr.tests.CreateBoard" time="28.374"/>
+  <system-out><![CDATA[35    -   34
+36    -   35
+37    -   36
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

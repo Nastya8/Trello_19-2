@@ -5,6 +5,6 @@
         <classes>
             <class name="com.tr.tests.CreateTeam"/>
             <class name="com.tr.tests.CreateBoard"/>
-        </classes>
+            </classes>
     </test>
 </suite>

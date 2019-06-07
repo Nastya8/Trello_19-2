@@ -3,8 +3,8 @@
 <suite name="TrelloRegressionTests" verbose="1" >
     <test name="Team">
         <classes>
-            <class name="com.tr.tests.CreateTeam"/>
             <class name="com.tr.tests.CreateBoard"/>
-        </classes>
+            <class name="com.tr.tests.CreateTeam"/>
+            </classes>
     </test>
 </suite>

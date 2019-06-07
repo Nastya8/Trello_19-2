@@ -52,7 +52,7 @@ public class CreateBoard extends TestBase {
 
   }
 
-  @Test
+  @Test(enabled = false)
   public void boardCcountTest() throws InterruptedException {
     int count = app.getBoardHelper().getPersonalBoardsCount();
     System.out.println(count);

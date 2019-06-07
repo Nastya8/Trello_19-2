@@ -1,0 +1,10 @@
+08:47:39.154 [Test worker] INFO  com.tr.tests.TestBase - Stop test teamCreationFromHeaderTestwith parameters[]
+08:47:59.241 [Test worker] INFO  com.tr.tests.TestBase - Start test teamCreationFromHeaderTest
+08:47:59.245 [Test worker] INFO  com.tr.tests.TestBase - Stop test boardCreationTestwith parameters[com.tr.model.Board@6c5bd1a9]
+08:48:45.551 [Test worker] INFO  com.tr.tests.TestBase - Start test boardCreationTest
+08:48:45.552 [Test worker] INFO  com.tr.tests.TestBase - Stop test boardCreationTestwith parameters[com.tr.model.Board@2c2daac7]
+08:49:14.102 [Test worker] INFO  com.tr.tests.TestBase - Start test boardCreationTest
+08:49:14.104 [Test worker] INFO  com.tr.tests.TestBase - Stop test boardCreationTestwith parameters[com.tr.model.Board@2bc75932]
+08:49:41.877 [Test worker] INFO  com.tr.tests.TestBase - Start test boardCreationTest
+08:49:41.878 [Test worker] INFO  com.tr.tests.TestBase - Stop test firstPrivateBoardDeletionTestwith parameters[]
+08:49:41.986 [Test worker] INFO  com.tr.tests.TestBase - Start test firstPrivateBoardDeletionTest

@@ -12,18 +12,26 @@ public class TeamHelper  extends  HelperBase{
   }
 
   public void selectCreateTeamFromDropDown() {
-  click(By.cssSelector(".js-new-org"));
+  //click(By.cssSelector(".js-new-org"));
     //click(By.cssSelector("[data-test-id='header-create-team-button']"));
     //click(By.cssSelector("[class='js-new-org']"));
-
+    if (isElementPresent(By.cssSelector(".js-new-org"))){
+      click(By.cssSelector(".js-new-org"));
+    }else
+      waitForElementAndClick(15,By.cssSelector("[data-test-id='header-create-team-button']"));
   }
+
 
   public void fillTeamCreationForm(Team team) {
     //name
+    if (isElementPresent(By.cssSelector("[data-test-id='header-create-team-name-input']"))){
+      type(By.cssSelector("[data-test-id='header-create-team-name-input']"),team.getTeamName());
+    }else
    type(By.name("displayName"), team.getTeamName());
 //type(By.cssSelector("[data-test-id='header-create-team-name-input']"), team.getTeamName());
   //type(By.id("org-display-name"), team.getTeamName());
 //desc
+
   type(By.name("desc"), team.getDesc());
 
   }

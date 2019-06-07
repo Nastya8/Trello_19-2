@@ -14,12 +14,13 @@ public class CreateTeam extends  TestBase {
   }
   @Test
   public  void teamCreationFromHeaderTest() throws InterruptedException {
-    app.getHeader().clickOnPlusButtonOnHeader();
+    app.getHeader().waitAndClickOnPlusButtonOnHeader();
     app.getTeamHelper().selectCreateTeamFromDropDown();
-    String teamName = "bbbby" + System.currentTimeMillis();
+    String teamName = "bbbbnby" + System.currentTimeMillis();
     //final Team desc = new Team(teamName, "desc");
     app.getTeamHelper().fillTeamCreationForm(new Team().withTeamName(teamName).withDesc("desc"));
     app.getTeamHelper().submitTeamCreation();
+
 
     String teamNameActual = app.getTeamHelper().getTeamName();
 
